@@ -1,0 +1,107 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .dropbtn {
+        background-color: #3498db;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+
+      .dropup {
+      }
+
+      .dropup-content {
+        display: none;
+        background-color: #f1f1f1;
+      }
+
+      .dropup-content a {
+        display: block;
+      }
+
+
+      .dropup:hover .dropup-content {
+        display: block;
+      }
+
+
+    </style>
+  </head>
+  <body style="background-color: white">
+    <h2>Hoverable Dropup</h2>
+    <p>Example text...</p>
+    <p>Example text...</p>
+    <p>Move the mouse over the button to open the dropup menu.</p>
+
+    <div class="dropup">
+      <p ="dropbtn">*</p>
+
+        <a href="#"
+          ><img
+            src="https://www.pintola.in/cdn/shop/files/Best_seller_400x.png?v=1693990787"
+        /></a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home Page</title>
+    <!-- <style>
+        /* Style the navigation menu */
+        ul.nav {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul.nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        /* Style the links */
+        ul.nav li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Style the active link */
+        ul.nav li a.active {
+            font-weight: bold;
+        }
+    </style> -->
+  </head>
+  <body>
+    <ul class="nav">
+      <li>
+        <a href="#" class="active" onclick="updateTitle('Home Page')">Home</a>
+      </li>
+      <li><a href="#" onclick="updateTitle('About')">About</a></li>
+      <li><a href="#" onclick="updateTitle('Contact')">Contact</a></li>
+    </ul>
+
+    <!-- Page content goes here -->
+
+    <script>
+      function updateTitle(newTitle) {
+        document.title = newTitle;
+        // Remove the 'active' class from all links
+        var links = document.querySelectorAll("ul.nav li a");
+        links.forEach(function (link) {
+          link.classList.remove("active");
+        });
+        // Add the 'active' class to the clicked link
+        event.target.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

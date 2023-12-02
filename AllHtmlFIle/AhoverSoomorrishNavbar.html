@@ -1,0 +1,133 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .dropdown-content {
+        display: none;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .nn {
+        display: none;
+      }
+
+      .dropdown-content:hover .nn {
+        display: block;
+      }
+
+      .nn img {
+        display: block;
+        max-width: 300px; 
+      }
+
+      .all:hover .nn {  
+        display: block;
+      }
+
+      .nnn img {
+        max-width: 300px;
+        display: none;
+      }
+      .delight:hover .nnn {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <span>SHOP</span>
+      <div class="dropdown-content">
+        <p class="all">All Around</p>
+        <p class="delight">Chocolate Delight</p>
+        <p>Chocolate Delight</p>
+        <p>Chocolate Delight</p>
+        <div class="nn">
+          <img src="https://somoorish.com.au/admin/category/grid_1.webp" />
+        </div>
+
+        <div class="nnn">
+          <img
+            src="https://somoorish.com.au/admin/category/Rocky%20Road%20Bar_Grid.webp"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 200px;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown-content p {
+        cursor: pointer;
+      }
+
+      /* Radio buttons to trigger image display */
+      .radio-input {
+        display: none;
+      }
+
+      .radio-label {
+        display: block;
+        margin: 10px 0;
+        cursor: pointer;
+      }
+
+      .radio-input:checked + .nn {
+        display: block;
+      }
+
+      .nn img {
+        display: block;
+        max-width: 300px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <span>SHOP</span>
+      <div class="dropdown-content">
+        <label class="radio-label all"
+          >All Around
+    
+          <div class="nn">
+            <!-- Images for "All Around" -->
+            <img
+              src="https://somoorish.com.au/admin/category/Rocky%20Road%20Bar_Grid.webp"
+            />
+          </div>
+        </label>
+        <label class="radio-label delight"
+          >Chocolate Delight
+
+          <div class="nn">
+            <!-- Images for "Chocolate Delight" -->
+            <img src="https://somoorish.com.au/admin/category/grid_1.webp" />
+          </div>
+        </label>
+      </div>
+    </div>
+  </body>
+</html>

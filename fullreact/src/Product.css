@@ -1,0 +1,19 @@
+.class {
+  display: grid;
+  grid-template-columns: 600px 600px;
+  height: 150px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+span {
+  color: lightcoral;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}

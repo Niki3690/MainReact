@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ad0047;
+      padding: 0 100px;
+      position: relative;
+      /* z-index: 100; */
+    }
+
+    .container .nav ul {
+      display: flex;
+    }
+
+    .container .nav ul li {
+      list-style: none;
+      padding: 20px;
+    }
+
+    .nav ul li a::after {
+      content: attr(maahi);
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-weight: 600;
+      visibility: hidden;
+    }
+
+    .nav ul li a:hover::after {
+      visibility: visible;
+      text-decoration: underline;
+      text-underline-offset: 6px;
+    }
+
+    .nav ul li a {
+      letter-spacing: 2px;
+      position: relative;
+      text-decoration: none;
+      color: white;
+      font: 120% system-ui;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="nav">
+        <ul>
+          <li><a href="" maahi="Home">Home</a></li>
+          <li><a href="" maahi="About">About</a></li>
+          <li><a href="" maahi="Contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

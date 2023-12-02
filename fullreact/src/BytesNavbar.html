@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BytesNavbar</title>
+  </head>
+
+  <style>
+    /* li:hover {
+      cursor: pointer;
+      background-color: palevioletred;
+    }
+
+    li {
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+    } */
+
+    ol {
+      list-style-type: none;
+    }
+    ol li {
+      float: left;
+    }
+    ol li a {
+      padding: 20px;
+      text-decoration: none;
+      color: black;
+      position: relative;
+    }
+    ol li a::before {
+      content: "";
+      height: 0px;
+      width: 0px;
+      background: red;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      opacity: 0.2;
+      transition: all 0.5s linear;
+      z-index: -1;
+    }
+    ol li a:hover::before {
+      height: 40px;
+      width: 40px;
+      opacity: 0.5;
+    }
+  </style>
+  <body>
+    <div>
+      <ul
+        style="
+          list-style: none;
+          display: flex;
+          gap: 45px;
+          font-size: 20px;
+          justify-content: center;
+          margin-top: 15px;
+        "
+      >
+        <li>
+          <img
+            src="https://www.bytestechnolab.com/wp-content/uploads/2021/09/bytes-logo.svg"
+            style="margin-left: -285px"
+          />
+        </li>
+
+        <li>About</li>
+        <li>Expertise</li>
+        <li>services</li>
+        <li>Solutions</li>
+        <li>Portfolio</li>
+        <li>Blog</li>
+      </ul>
+
+      <ol>
+        <li><a href="">home</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">contact</a></li>
+        <li><a href="">service</a></li>
+      </ol>
+    </div>
+  </body>
+</html>
